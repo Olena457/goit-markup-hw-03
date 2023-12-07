@@ -1,4 +1,4 @@
-/* Base styles---------------- */
+/* Base styles------------------- */
 body {
   font-family: Roboto, sans-serif;
   color: #434455;
@@ -7,6 +7,22 @@ body {
 /* background header */
 .header-navigation {
   background-color: #ffffff;
+  border-bottom: 1px solid #e7e9fc;
+}
+img {
+  display: block;
+}
+/* container */
+.container {
+  width: 1158px;
+  padding: 0 15;
+  margin: o auto;
+}
+/* header container */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 /* background:hero+foooter */
 .hero,
@@ -17,13 +33,39 @@ body {
 button {
   cursor: pointer;
 }
-/* Reset style------------------ */
+/* Reset styles----------------------- */
 ul,
 ol {
   list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 a {
   text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 /* common styles----------------- */
 /* logo nav +footer  */
@@ -37,12 +79,18 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+.nav-logo {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
 .logo-dark {
   color: #2e2f42;
 }
 .logo-light {
   color: #f4f4fd;
 }
+
 /* h2 style */
 .title-medium {
   color: #2e2f42;
@@ -67,7 +115,10 @@ a {
 .team-section {
   background-color: #f4f4fd;
 }
-
+/* section title */
+.section-title {
+  background-color: #2e2f42;
+}
 /* (p)articles styles */
 .article-work,
 .article-team,
@@ -75,8 +126,15 @@ a {
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
 }
-/* ------------------------------ */
-/* page navigation */
+
+.section {
+  padding: 120px 0;
+}
+
+/* page navigation -----------------*/
+.nav {
+  display: flex;
+}
 .nav-page {
   color: #2e2f42;
   font-weight: 500;
@@ -87,10 +145,23 @@ a {
 .nav-page:focus {
   color: #404bbf;
 }
-/* ---------------- */
+.nav-list {
+  /* padding: 24px 832px 24px 347px; */
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+/* .studio {
+  padding: 24px 1045px 24px 347px; 
+} */
+/* ---------------- ------------*/
 /* address */
 .address {
+  display: flex;
   font-style: normal;
+}
+.address-block {
+  display: flex;
 }
 .address-link {
   color: #434455;
@@ -127,13 +198,21 @@ a {
 .features-list {
   background-color: #ffffff;
 }
-/* page section 3 */
+/* page section 3 ---------------------*/
+.cards-team {
+  /* width: calc((100 - 72) / 4); */
+}
 .page-team {
   background-color: #ffffff;
 }
 
 /* footer */
-
+.footer-logo {
+  padding: 100px 1169px 188px 156px;
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
 .footer-aside {
   color: #f4f4fd;
   line-height: 1.5; /* 150% */
