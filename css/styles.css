@@ -1,4 +1,5 @@
 /* Base styles------------------- */
+
 body {
   font-family: Roboto, sans-serif;
   color: #434455;
@@ -14,13 +15,13 @@ img {
 }
 /* container */
 .container {
-  width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
+  display: flex;
 }
 /* header container */
 .header-container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px 0 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -101,6 +102,7 @@ p {
   line-height: 1.11; /* 111.111% */
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 /* h3 style */
 .features-title,
@@ -112,13 +114,27 @@ p {
   line-height: 1.2; /* 120% */
   letter-spacing: 0.02em;
 }
+.wrapper {
+  padding: 32px 0;
+}
+.title-team .person {
+  text-align: center;
+  margin-bottom: 8px;
+}
+.features-title .direction {
+  margin-bottom: 8px;
+}
 /* section team */
 .team-section {
   background-color: #f4f4fd;
 }
+.container .container-team {
+  padding: 32px;
+}
 /* section title */
 .section-title {
   background-color: #2e2f42;
+  padding: 188px 0 188px;
 }
 /* (p)articles styles */
 .article-work,
@@ -127,7 +143,9 @@ p {
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
 }
-
+.article-team .position {
+  text-align: center;
+}
 .section {
   padding: 120px 0;
 }
@@ -184,6 +202,7 @@ p {
   font-weight: 700;
   line-height: 1.07; /* 107.143% */
   letter-spacing: 0.02em;
+  min-width: 496px;
 }
 .hero-btn {
   color: #ffffff;
@@ -191,21 +210,37 @@ p {
   line-height: 1.5; /* 150% */
   letter-spacing: 0.04em;
   background-color: #4d5ae5;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
 }
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: #404bbf;
 }
 /* ul features-list */
+.features-page {
+  padding: 120px 0 120px;
+}
+.features-general {
+  display: flex;
+  gap: 24px;
+}
 .features-list {
   background-color: #ffffff;
+  width: calc((100% - 72) / 4);
 }
 /* page section 3 ---------------------*/
 .cards-team {
-  /* width: calc((100 - 72) / 4); */
+  display: flex;
+  gap: 24px;
 }
 .page-team {
   background-color: #ffffff;
+  width: calc((100% - 72) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
 
 /* footer */
