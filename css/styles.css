@@ -12,10 +12,13 @@ body {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 /* container */
 .container {
-  display: flex;
+  width: 1128px;
+  margin: 0 auto;
 }
 /* header container */
 .header-container {
@@ -93,9 +96,11 @@ p {
   color: #f4f4fd;
 }
 
-/* h2 style */
-.title-medium {
+/* section our team*/
+.section.section-portfolio {
   color: #2e2f42;
+}
+.title-medium {
   text-align: center;
   font-size: 36px;
   font-weight: 700;
@@ -117,18 +122,18 @@ p {
 .wrapper {
   padding: 32px 0;
 }
-.title-team .person {
+.title-team.person {
   text-align: center;
   margin-bottom: 8px;
 }
-.features-title .direction {
+.features-title.direction {
   margin-bottom: 8px;
 }
 /* section team */
 .team-section {
   background-color: #f4f4fd;
 }
-.container .container-team {
+.container.container-team {
   padding: 32px;
 }
 /* section title */
@@ -143,7 +148,7 @@ p {
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
 }
-.article-team .position {
+.article-team.position {
   text-align: center;
 }
 .section {
@@ -205,12 +210,12 @@ p {
   min-width: 496px;
 }
 .hero-btn {
+  display: block;
   color: #ffffff;
   font-weight: 500;
   line-height: 1.5; /* 150% */
   letter-spacing: 0.04em;
   background-color: #4d5ae5;
-  display: block;
   min-width: 169px;
   height: 56px;
   border: none;
@@ -220,17 +225,19 @@ p {
 .hero-btn:focus {
   background-color: #404bbf;
 }
-/* ul features-list */
-.features-page {
+/* ul features2*/
+.features {
   padding: 120px 0 120px;
 }
-.features-general {
+.features-list {
   display: flex;
   gap: 24px;
 }
-.features-list {
+.features-item {
   background-color: #ffffff;
-  width: calc((100% - 72) / 4);
+  width: calc((100% - 24px * 3) / 4);
+}
+.article-work text {
 }
 /* page section 3 ---------------------*/
 .cards-team {
@@ -242,16 +249,41 @@ p {
   width: calc((100% - 72) / 4);
   border-radius: 0px 0px 4px 4px;
 }
-
+/* page-portfo  section 4*/
+.page-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+.size-portfolio {
+  width: calc((100% - 48) / 3);
+}
+.category {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
 /* footer */
+.footer.page {
+  padding-bottom: 100px;
+  padding-bottom: 100px;
+}
+
 .footer-logo {
   padding: 100px 1169px 188px 156px;
-  display: inline-flex;
+  display: inline-block;
   align-items: center;
   flex-shrink: 0;
 }
+.footer-logo.block {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
 .footer-aside {
   color: #f4f4fd;
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
+  max-width: 264px;
 }
