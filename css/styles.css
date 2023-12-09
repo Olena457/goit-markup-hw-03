@@ -17,13 +17,12 @@ img {
 }
 /* container */
 .container {
-  width: 1128px;
+  width: 1158px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 /* header container */
 .header-container {
-  width: 1158px;
-  margin: 0 auto;
   padding: 0 15px 0 15px;
   display: flex;
   align-items: center;
@@ -133,14 +132,12 @@ p {
 .team-section {
   background-color: #f4f4fd;
 }
-.container.container-team {
-  padding: 32px;
-}
+
 /* section title */
 .section.section-title {
   background-color: #2e2f42;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  text-align: center;
+  margin-bottom: 120px;
 }
 /* (p)articles styles */
 .article-work,
@@ -168,6 +165,7 @@ p {
   letter-spacing: 0.02em;
   padding-top: 24px;
   padding-bottom: 24px;
+  display: block;
 }
 .nav-page:hover,
 .nav-page:focus {
@@ -175,8 +173,6 @@ p {
 }
 .nav-list {
   display: flex;
-  padding-top: 24px;
-  padding-bottom: 24px;
   gap: 40px;
 }
 
@@ -202,6 +198,7 @@ p {
   color: #404bbf;
 }
 /* section hero----------- */
+
 .hero-title {
   color: #ffffff;
   text-align: center;
@@ -209,7 +206,10 @@ p {
   font-weight: 700;
   line-height: 1.07; /* 107.143% */
   letter-spacing: 0.02em;
-  min-width: 496px;
+  width: 496px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
 }
 .hero-title.container {
   max-width: 496px;
@@ -221,16 +221,19 @@ p {
   letter-spacing: 0.04em;
   background-color: #4d5ae5;
   display: block;
-  min-width: 169px;
+  width: 169px;
   height: 56px;
   border: none;
   border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: #404bbf;
 }
+
 /* ul features2*/
 .features {
   padding: 120px 0 120px;
@@ -280,8 +283,6 @@ p {
 }
 
 .footer-logo {
-  padding: 100px 1169px 188px 156px;
-  display: inline-block;
   align-items: center;
   flex-shrink: 0;
 }
